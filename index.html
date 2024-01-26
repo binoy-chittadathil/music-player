@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music player</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <div class="img-div">
+                <img src="media/musicLogo.avif" alt="musicThumbanil" class="song-img">
+            </div>
+            <h1 id="songName">Song Name</h1>
+            <p id="artistName">Artist name</p>
+            <audio id="song">
+                <source src="media/song1.mp3" type="audio/mp3">
+            </audio>
+            <input type="range" id="progress" value="0">
+            <div class="controls">
+                <div><i onclick="previous()" class="fa-solid fa-backward"></i></div>
+                <div><i onclick="playPause()" class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                <div><i onclick="next()" class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
